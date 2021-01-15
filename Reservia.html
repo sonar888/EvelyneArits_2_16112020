@@ -1,78 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
-		<meta charset=”utf-8 />
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
 		<title>Reservia</title>  
 	</head>
 	<body>
-		<main>
-			<header>
-				<div class="">
-					<img src="Reservia@3x.png" alt="logo reservia"/>
-					<nav>
-						<a href="#hebergement">Hébergements</a>
-						<a href="#activity">Activités</a>
-						<a href="#">S'inscrire</a>
-					</nav>	
-				</div>
+		<header>
+			<div class="nav">
+				<img src="Reservia@3x.png" alt="logo reservia"/>
+				<nav>
+					<a href="#hebergement">Hébergements</a>
+					<a href="#activity">Activités</a>
+					<a href="#sinscrire">S'inscrire</a>
+				</nav>	
+			</div>
 
-				<div class="recherche">
-					<p>Trouver votre hébergement des vacances de rêve </p>
-					<p>En plein centre ville ou en pleine nature</p>
+			<div class="recherche">
+				<p>Trouver votre hébergement des vacances de rêve </p>
+				<p>En plein centre ville ou en pleine nature</p>
+				<div class="barre_recherche">
+					<i class="fa fa-map-marker"></i>
 					<label for="site-search"></label>
-					<input type="search"/>  
+					<input type="search" id="site-search" placeholder="Marseille" />  
 					<button>Rechercher</button>
 				</div>
+			</div>
 
-				<div class="filtres">Filtres
-					<p>Economique</p>
-					<p>Famillial</p>
-					<p>Romantique</p>
-					<p>Animaux autorisés</p>
-				</div>
+			<div class="filtres">Filtres
+				<p>Economique</p>
+				<p>Famillial</p>
+				<p>Romantique</p>
+				<p>Animaux autorisés</p>
+			</div>
 
-				<div class="info">
-					<small>Plus de 500 logements sont disponibles dans cette ville</small>
-				</div>
+			<div class="info">
+				<small>Plus de 500 logements sont disponibles dans cette ville</small>
+			</div>
 
-			</header>
+		</header>
+		<main>
 			<section class="hebergement">
-				<h1>Hébergements à Marseille</h1>
+				<h2>Hébergements à Marseille</h2>
 				<div>
 					<p><img src="images/hebergements/4_small/auberge.jpg" alt="image de l'auberge, chambre lits superposés">Auberge de la Cannebière</p>
 					<p>Nuit à partir de 25€</p>
 				</div>
 
 				<div>
-					<p><img src="images/hebergements/4_small/hotel du port.jpg" alt="Petite chambre deux lits">Hôtel du port</p>
+					<p><img src="images/hebergements/4_small/hotel\ du\ port.jpg" alt="Petite chambre deux lits">Hôtel du port</p>
 					<p>Nuit à partir de 52€</p>
 				</div>
 
 				<div>
-					<p><img src="images/hebergements/4_small/hotel les mouettes.jpg" alt="Chambre style mid-century grand lit double salle de bain ensuite">Hôtel Les mouettes</p>
+					<p><img src="images/hebergements/4_small/hotel\ les\ mouettes.jpg" alt="Chambre style mid-century grand lit double salle de bain ensuite">Hôtel Les mouettes</p>
 					<p>Nuit à partir de 46€</p>
 				</div>
 
 				<div>
-					<p><img src="images/hebergements/4_small/hotel de la mer.jpg" alt="Chambre lit double avec grande fenêtre">Hôtel de la mer</p>
+					<p><img src="images/hebergements/4_small/hotel\ de\ la\ mer.jpg" alt="Chambre lit double avec grande fenêtre">Hôtel de la mer</p>
 					<p>Nuit à partir de 76€</p>
 				</div>
 
 				<div>
-					<p><img src="images/hebergements/4_small/hotel le panier.jpg" alt="Chambre partagées avec 4 lits superposés dans le mur">Hôtel Le Panier</p>
+					<p><img src="images/hebergements/4_small/hotel\ le\ panier.jpg" alt="Chambre partagées avec 4 lits superposés dans le mur">Hôtel Le Panier</p>
 					<p>Nuit à partir de 23€</p>
 				</div>
 
 				<div>
-					<p><img src="images/hebergements/4_small/chez amina.jpg" alt="Chambre avec deux lits doubles">Auberge chez Amina</p>
+					<p><img src="images/hebergements/4_small/chez\ amina.jpg" alt="Chambre avec deux lits doubles">Auberge chez Amina</p>
 					<p>Nuit à partir de 96€</p>
 				</div>
 
 			</section>
 			<section class="populaires">
-				<h1>Les plus populaires</h1>
+				<h2>Les plus populaires</h2>
 				<div>
-					<p><img src="images/hebergements/4_small/le soleil du matin.jpg" alt="">Hôtel Le soleil du matin</p>
+					<p><img src="images/hebergements/4_small/le\ soleil\ du\ matin.jpg" alt="">Hôtel Le soleil du matin</p>
 					<p>Nuit à partir de 128€</p>
 				</div>
 
@@ -88,7 +94,7 @@
 			</section>
 
 			<section class="activity">
-				<h1>Activités à Marseilles</h1>
+				<h2>Activités à Marseilles</h2>
 				<div>
 					<p><img src="images/activites/4_small/vieux port.jpg" alt="des voiliers et bateaux amarrés dans un port">Vieux Port</p>
 				</div>

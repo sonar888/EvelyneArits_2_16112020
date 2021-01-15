@@ -1,0 +1,42 @@
+/*BODY STYLES*/
+
+body {
+        font-family: 'Raleway', Comic sans MS, serif;
+        font-size: 1em;
+        color: black;
+        background-color: white;
+      }
+
+h1 {
+	font-size: 1.5em
+
+}
+/* HEADER STYLES*/
+/*******************/
+
+/* nAVIGATION MENU*/
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: auto 15px;
+}
+
+/* FOOTER STYLES*/
+
+footer {
+	font-family: 'Raleway', Comic sans MS, serif;
+	font-size: 0.5em
+	color: black;
+	background-color: #F2F2F2;
+	
+	border-color: #F2F2F2;
+
+	display: flex; 
+	justify-content: space-around;
+
+
+}
+
+h2 {
+	font-size: 1em;
+}
