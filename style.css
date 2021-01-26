@@ -1,42 +1,313 @@
 /*BODY STYLES*/
 
 body {
-        font-family: 'Raleway', Comic sans MS, serif;
-        font-size: 1em;
-        color: black;
-        background-color: white;
-      }
+	font-family: 'Raleway', Comic sans MS, serif;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+}
+
+/*******************/
+/*HEADER STYLES*/
+header {
+	color: black;
+}
+
+p {
+	font-size: 1em;
+	color: black;
+}
 
 h1 {
-	font-size: 1.5em
+	font-size: 1.5em;
+	font-weight: bold
 
+	width: 50%;
 }
-/* HEADER STYLES*/
-/*******************/
-
-/* nAVIGATION MENU*/
+/*NAVIGATION MENU*/
 .nav {
 	display: flex;
 	justify-content: space-between;
 	padding: auto 15px;
 }
 
+/*RECHERCHE*/
+
+
+.barre_recherche {
+	display: flex; /* aligne le logo, la barre de recherche et le bouton rechercher */ 
+}
+
+.logo_map {
+	text-align: center;
+	background-color: #F2F2F2;
+	border-radius: 10px 0px 0px 10px;
+	width: 20px;
+	padding: 7px 7px 7px 7px;  
+}
+
+label {
+	display: flex; /* cette ligne fait en sorte que les boites ont la même épaisseur */
+	height: 40px;
+  	max-width: 30%;
+}
+
+input {
+  border-color: #F2F2F2 #0065FC #F2F2F2 white;
+  border-style: solid;
+  font-weight: bold;
+  color: black;
+}
+
+button {
+	font-size: 1em;
+	color: white;
+	font-weight: bold;
+	background-color: #0065FC;
+	border-color: #0065FC;
+	border-radius: 0px 10px 10px 0px;
+	padding: auto;
+  	border-style: solid;
+}
+
+
+/* FILTRES */
+
+.filtres {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 80%;
+	
+	
+  
+}
+.font {
+ 
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	align-items: baseline;
+	
+	
+}
+
+.logo {
+  color: #0065FC;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  padding: 12.5px;
+  width: 15px;
+  height:15px;
+  display: inline-block;
+  float: left;
+  margin-right: -40px;
+  
+  
+  }
+  
+#border {
+  
+  border: transparent;
+  border-radius: 25px 25px 25px 25px;
+  padding: 12.5px;
+  justify-content: center;
+  
+  }
+
+.border {
+  border: solid;
+  border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 7px 10px 45px;
+  justify-content: center;
+  
+  }
+
+/*INFO */
+i {
+	
+	align-items: justify;
+
+}
+
+
+.info {
+	display: flex;
+	flex-direction: row;
+	
+
+}
+
+.info-logo {
+	border-radius: 50%;
+	border: solid #F2F2F2;
+	padding: 0;
+  	justify-content: center;
+	color: #0065FC;
+	width: 7px;
+	height: 7px;
+    
+}
+
+em {
+	font-size: 0.8em;
+	font-style: normal;
+}
+
+
+
+/*******************/
+
+/* HEBERGEMENT STYLES*/
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: justify;
+	max-width: 65%;
+	border-radius: 20px;
+	background-color: #F2F2F2
+}
+
+.title {
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+.flexrow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+
+.mise_en_forme {
+	flex-wrap: wrap;
+	width: 225px;
+	border: solid white 5px;
+	border-radius: 20px;
+	background-color: white;
+	margin: 7px;
+}
+
+
+img {
+	height: 125px;
+	width: 225px;
+	border-radius: 20px;
+
+}
+
+
+.texte {
+	font-weight: bold;
+}
+
+.rating {
+	display: flex;
+	flex-direction: row;
+}
+.stars {
+	display: flex;
+	flex-direction: row;
+	color: #0065FC;
+}
+ .exception {
+ 	display: flex;
+	flex-direction: row;
+ 	color: #F2F2F2
+}
+
+.affiche {
+
+}
+
+.popheb {
+	display: flex;
+	flex-direction: row;
+}
+
+/* LES PLUS POPULAIRES STYLES*/
+
+#together {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 25px;
+}
+
+.mise_en_forme_droite {
+	border-radius: solid red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: solid red 5px;
+	border-radius: 20px;
+	background-color: white;
+	margin: 7px;
+}
+.flexright {
+	display: flex;
+	flex-direction: row;
+	border: solid black;
+}
+
+
+.imgd {
+	
+	height: 140px;
+	width: 140px;
+	border-radius: 20px;
+	border: solid green;
+
+}
+
+.img_droite {
+	border: solid green;
+}
+
+.flexcolumn {
+	display: flex;
+	flex-direction: column;
+	border: solid blue;
+}
+
+.texte_d {
+	font-weight: bold;
+	border: solid black;
+	
+}
+
+.rating_d {
+	display: flex;
+	flex-direction: row;
+	border: solid pink;
+	color: green;
+}
+}
 /* FOOTER STYLES*/
 
 footer {
 	font-family: 'Raleway', Comic sans MS, serif;
 	font-size: 0.5em
 	color: black;
+
 	background-color: #F2F2F2;
-	
 	border-color: #F2F2F2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 15px;
+	
 
 	display: flex; 
 	justify-content: space-around;
 
-
 }
 
 h2 {
-	font-size: 1em;
+	font-size: 1.2em;
+	font-weight: bold;
 }
