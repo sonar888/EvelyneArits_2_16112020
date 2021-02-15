@@ -437,24 +437,15 @@ em {
 
 /* ACTIVITES STYLES*/
 
-.container_activity {
-	display: flex;
-	flex-direction: column;
-	margin-top: 30px;
-	
+.container_activity_main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    
 } /*takes into account the div*/
 
-#activity {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-} 
-
-/* does something */
-
-
-
-.ROW {
+.activity_container_sub{
 	display: flex;
 	flex-direction: row;
 	height: 100%;
@@ -462,51 +453,72 @@ em {
 }
 
 .row {
-
-	display: flex;
-	flex-direction: row;
-	width: 50%;
-	justify-content: space-between;	
+    display: flex;
+    width: 50%;
+    
 }
 
 .column {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	align-content: stretch;	
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    height: 400px;
+    align-items: flex-start;
+	
 }
 
 
-.fig {
-	display: flex;
+
+.fig1 {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+    align-items: left;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+	
 	flex-direction: column;
-	border-radius: 20px 20px 0 0;
-	box-shadow: 5px 5px 5px #F2F2F2;
-	position: relative;
-	align-items: left;
-	width: 80%;	
+}
+
+.fig2 {
+    height: 45%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+   
 }
 
 /* padding-left: -75px;
 	margin-left: -5px;
 	height: 350px;*/
 
-.img1{
+.img1 {
 	border-radius: 20px 20px 0 0;
 	height: 350px;
 	width: 100%;
-
+	object-fit: cover;
 }
 
-.img2{
-	border-radius: 20px 20px 0 0;
-	width: 100%;
-	
+.img2 {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
 }
+
 
 .VP {
-	font-weight: bold;
-	padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 50px;
+    margin: 0px;
+    padding: 5px 5px;
 }
 
 
