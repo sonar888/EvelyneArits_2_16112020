@@ -5,9 +5,6 @@ body {
     font-size: 1em;
     color: black;
     background-color: white;
-}
-
-main {
 	margin: 0px 50px;
 }
 
@@ -21,35 +18,33 @@ header {
 
 
 /*NAVIGATION MENU*/
-.nav {
+nav {
 	display: flex;
 	justify-content: space-between;
 	padding: auto 15px;
 	border-top: 30px;
 	align-items: center;
-	
 }
 
-nav {
+.container_navigation_menu {
 	display: flex;
-	width: 350px;
+	width: 33%;
 	justify-content: space-between;
-	
 }
 
-.has {
+.navigation_elements {
 	color: black;
 	text-decoration: none;
 	padding-top: 30px;
 }
 
-.has:hover {
+.navigation_elements:hover {
 	border-top: solid 3px #0065FC;
 	color: #0065FC;
 	padding-top: 30px;
 }
 
-.has:visited {
+.navigation_elements:visited {
 	border-top: solid 3px #0065FC;
 	padding-top: 30px;
 	color: #0065FC;
@@ -67,15 +62,15 @@ nav {
 
 }
 
-/*RECHERCHE*/
-.recherche {
-	margin-top: 35px;
+/*TITRE ET RECHERCHE*/
+
+.headline {
+    margin: 50px 0 25px;
 }
 
 h1 {
 	font-size: 1.3em;
-	font-weight: bold
-	
+	font-weight: bold	
 }
 
 p {
@@ -83,7 +78,7 @@ p {
 }
 
 
-label {
+.search_bar {
 	display: flex; /* cette ligne fait en sorte que les boites ont la même épaisseur */
   	align-items: center;
   	padding-top: 10px;
@@ -138,7 +133,19 @@ button {
 
 /* FILTRES */
 
-.filtres_media {
+.filters {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 67%;
+}
+
+#to_align {
+	padding: 12.5px;
+	font-weight: bold;	
+}
+
+.filtering_system {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -146,22 +153,9 @@ button {
 	width: 100%;
 }
 
-.filtres {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	width: 67%;
+.filter_container {
+    position: relative;
 }
-
-.font {
- 
-	display: flex;
-	flex-direction: row;
-	font-weight: bold;
-	align-items: baseline;
-	position: relative;
-}
-
 
 .logo {
     align-content: center;
@@ -177,68 +171,51 @@ button {
     height: 15px;
     text-align: center;
 }
-#border {
-  
-  border: transparent;
-  border-radius: 25px 25px 25px 25px;
-  padding: 12.5px;
-  justify-content: center;
-  
-  }
 
-.border {
+.border_and_font {
   border: solid;
   border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent;
   border-radius: 25px 25px 25px 25px;
   padding: 10px 7px 10px 45px;
   justify-content: center;
-  
-  }
-
-/*INFO */
-i {
-		align-items: justify;
-
+  font-weight: bold;
 }
 
+
+
+/*INFO */
+
+
 .info {
-	display: flex;
-	flex-direction: row;
-	margin-top: 35px;
-	margin-bottom: 35px;
-	justify-content: flex-start;
-	align-items: baseline;
-	
+    display: flex;
+    margin: 35px 0;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    width: fit-content;
 }
 
 .info-logo {
-	border-radius: 50%;
-	border: solid #F2F2F2;
-	padding: 0;
-  	justify-content: center;
-	color: #0065FC;
-	width: 7px;
-	height: 7px;
-	
-
-    
+    justify-content: center;
+    color: #0065FC;
+    border: solid #F2F2F2;
+    display: flex;
+    border-radius: 50%;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    text-align: left;
+    align-items: left;
 }
 
-
-.fas\ fa-info {
-	border-radius: 50%;
-	border: solid #F2F2F2;
-	padding: 35px;
-  	justify-content: center;
-	color: #0065FC;
-	width: 7px;
-	height: 7px;
-}
-
-em {
+.sidenote_info {
 	font-size: 0.8em;
 	font-style: normal;
+	padding: 0 15px;
 }
+
+
+
 
 
 
@@ -246,7 +223,13 @@ em {
 
 /* HEBERGEMENT STYLES*/
 
-.flex-container {
+.flex_container_facilities_and_popular {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0
+}
+
+.flex_container_facilities {
     display: flex;
     flex-direction: column;
     align-items: justify;
@@ -255,35 +238,25 @@ em {
     background-color: #F2F2F2;
 }
 
-.title {
+.main_titles {
 	font-weight: bold;
 	margin-left: 25px;
-	padding-top: 10px;	
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 25px;	
 }
 
-.flexrow {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    /* height: fit-content; */
-    /* border: solid blue; */
-    width: 100%;
-    padding: 10px 0px;
-}
-
-.second_line {
+.flex_double_row_facilities {
     display: flex;
     flex-direction: row;
-    /* border: solid black; */
-    /* justify-content: flex-start; */
     align-items: center;
     margin: auto;
-    /* height: 30%; */
 }
 
-
-
-.mise_en_forme {
+.figure_facilities {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -305,7 +278,7 @@ em {
     margin: auto;
 }
 
-.text_container {
+.figcaption_facilities {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -318,10 +291,6 @@ em {
     bottom: 25px;
 }
 
-.texte_absolute {
-	position: absolute;
-	border: saddlebrown solid;
-}
 .texte {
 	font-weight: bold;
 	padding: 0;
@@ -329,7 +298,7 @@ em {
 	bottom: -20px;
 }
 
-.stars {
+.star_rating {
     display: flex;
     flex-direction: row;
     top: -10px;
@@ -351,20 +320,25 @@ em {
 	margin-left: 25px;
 }
 
-.popheb {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 
-}
 
 /* LES PLUS POPULAIRES STYLES*/
-.flex-container_d {
+
+.flex_container_popular {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     background-color: #F2F2F2;
     width: 33%;
+	
+}
+
+.headline_popular {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 25px;
 }
 
 .fa-chart-line {
@@ -372,7 +346,7 @@ em {
 	margin-right: 5px;
 	
 }
-.mise_en_forme_droite {
+.figure_facilities_popular {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
@@ -384,22 +358,6 @@ em {
     box-shadow: 2px 2px 20px grey;
 }
 
-.together {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin-right: 25px;
-}
-
-.pop {
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	justify-content: space-around;
-	height: 90%;
-	margin: 20px 10px;
-}
 
 .flexright {
 	display: flex;
@@ -416,28 +374,19 @@ em {
 
 } 
 
-
-
-
-.flexcolumn {
+.figcaption_popular {
 	display: flex;
 	flex-direction: column;
 	margin-left: 15px; 
 	
-} /* Aligns the description in a column next to the picture in "Les plus populaires" */
+} 
 
 
-	
 
-.rating_d {
-	display: flex;
-	flex-direction: row;
-	margin-top: 15px;	
-}
 
 /* ACTIVITES STYLES*/
 
-.container_activity_main {
+.flex_container_activity {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -445,17 +394,14 @@ em {
     
 } /*takes into account the div*/
 
-.activity_container_sub{
+.flex_activity_sub_container{
 	display: flex;
-	flex-direction: row;
-	height: 100%;
-	width: 100%;	
+	flex-direction: row;	
 }
 
 .row {
     display: flex;
-    width: 50%;
-    
+    width: 50%;   
 }
 
 .column {
@@ -464,30 +410,27 @@ em {
     width: 50%;
     justify-content: space-between;
     height: 400px;
-    align-items: flex-start;
-	
+    align-items: flex-start;	
 }
 
-
-
-.fig1 {
+.figure_1 {
     display: flex;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
     align-items: left;
     width: 80%;
     height: 100%;
-    margin: auto;
+    margin: 0;
 	
 	flex-direction: column;
 }
 
-.fig2 {
+.figure_2 {
     height: 45%;
     width: 85%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #f2f2f2;
    
@@ -512,7 +455,7 @@ em {
 }
 
 
-.VP {
+.figcaption_activitiy {
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -528,18 +471,14 @@ em {
 /* FOOTER STYLES*/
 
 footer {
-	font-family: 'Raleway', Comic sans MS, serif;
-	font-size: 0.5em;
-	color: black;
-
-	background-color: #F2F2F2;
-	border-color: #F2F2F2;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-left: 15px;
-	margin-top: 70px;
-	display: flex; 
-	justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+    padding: 20px 0;
+    margin: 70px 0;
 }
 
 h2 {
