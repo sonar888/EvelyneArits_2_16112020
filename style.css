@@ -1,0 +1,669 @@
+/*BODY STYLES*/
+
+body {
+	font-family: 'Raleway', Comic sans MS, serif;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+	margin: 0px 50px;
+}
+
+
+/*******************/
+/*HEADER STYLES*/
+header {
+	color: black;
+}
+
+
+
+
+/*NAVIGATION MENU*/
+.standard_navigation {
+	display: flex;
+	justify-content: space-between;
+	padding: auto 15px;
+	border-top: 30px;
+	align-items: center;
+}
+
+.container_navigation_menu {
+	display: flex;
+	width: 33%;
+	justify-content: space-between;
+}
+
+.navigation_elements {
+	color: black;
+	text-decoration: none;
+	padding-top: 30px;
+}
+
+.navigation_elements:hover {
+	border-top: solid 3px #0065FC;
+	color: #0065FC;
+	padding-top: 30px;
+}
+
+.navigation_elements:visited {
+	border-top: solid 3px #0065FC;
+	padding-top: 30px;
+	color: #0065FC;
+}
+
+#sinscrire {
+	font-weight: bold;
+}
+
+.reservia_logo {
+	
+	height: 75px;
+	width: 150px;
+	margin-top: 30px;
+
+}
+
+/*TITRE ET RECHERCHE*/
+
+.headline {
+    margin: 50px 0 25px;
+}
+
+h1 {
+	font-size: 1.3em;
+	font-weight: bold	
+}
+
+p {
+	font-size: 1em;
+}
+
+
+.search_bar {
+	display: flex; /* cette ligne fait en sorte que les boites ont la même épaisseur */
+  	align-items: center;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	
+}
+
+.fa-map-marker {
+	text-align: center;
+	background-color: #F2F2F2;
+	border: solid #F2F2F2;
+	border-radius: 10px 0px 0px 10px;
+	width: 40px;
+	height: 100%;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-right: -3px;
+	
+}
+
+input {
+	border-color: #F2F2F2 #0065FC #F2F2F2 white;
+	border-style: solid;
+	border-width: 3px;
+	font-weight: bold;
+	color: black;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+
+input:active {
+	border-color: #F2F2F2 #0065FC #F2F2F2 white;
+	border-style: solid;
+	font-weight: bold;
+	color: black;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+
+button {
+	font-size: 1em;
+	color: white;
+	font-weight: bold;
+	background-color: #0065FC;
+	border-color: #0065FC;
+	border-radius: 0px 10px 10px 0px;
+  	border-style: solid;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+
+
+/* FILTRES */
+
+.filters {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 67%;
+}
+
+#to_align {
+	padding: 12.5px;
+	font-weight: bold;	
+}
+
+.filtering_system {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.filter_container {
+    position: relative;
+}
+
+.logo {
+    align-content: center;
+    position: absolute;
+    justify-content: center;
+    bottom: 18px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    display: flex;
+    border-radius: 50%;
+    padding: 13px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.border_and_font {
+  border: solid;
+  border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 7px 10px 45px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+/*INFO */
+
+
+.info {
+    display: flex;
+    margin: 35px 0;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    width: fit-content;
+}
+
+.info-logo {
+    justify-content: center;
+    color: #0065FC;
+    border: solid #F2F2F2;
+    display: flex;
+    border-radius: 50%;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    text-align: left;
+    align-items: left;
+}
+
+.sidenote_info {
+	font-size: 0.8em;
+	font-style: normal;
+	padding: 0 15px;
+}
+
+
+
+
+
+
+/*******************/
+
+/* HEBERGEMENT STYLES*/
+
+.flex_container_facilities_and_popular {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0
+}
+
+.flex_container_facilities {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    width: 65%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.main_titles {
+	font-weight: bold;
+	margin-left: 25px;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 25px;	
+}
+
+.flex_double_row_facilities {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+
+.figure_facilities {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+    border: solid white 5px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px 20px;
+    box-shadow: 2px 2px 20px grey;
+    align-items: center;
+}
+
+
+.img {
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    margin: auto;
+}
+
+.figcaption_facilities {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    /* border: solid green; */
+    height: 45%;
+    width: 100%;
+    position: relative;
+    bottom: 25px;
+}
+
+.texte {
+	font-weight: bold;
+	padding: 0;
+	position: relative;
+	bottom: -20px;
+}
+
+.star_rating {
+    display: flex;
+    flex-direction: row;
+    top: -10px;
+    color: #0065FC;
+    position: relative;
+}
+.exception {
+ 	color: #F2F2F2 !important;
+}
+
+.affiche:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+.affiche {
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+
+
+/* LES PLUS POPULAIRES STYLES*/
+
+.flex_container_popular {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 33%;
+	
+}
+
+.headline_popular {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 25px;
+}
+
+.fa-chart-line {
+	font-size: 25px;
+	margin-right: 5px;
+	
+}
+.figure_facilities_popular {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 85%;
+    border: solid white 5px;
+    border-radius: 20px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 2px 2px 20px grey;
+    margin: 20px auto;
+}
+
+
+.flexright {
+	display: flex;
+	flex-direction: row;
+	border-width: 12px;
+	
+} /* Aligns the picture and description next to each other in "Les plus populaires" */
+
+.imgd {
+	
+	height: 100%;
+    max-height: 155px;
+    margin: auto;
+	width: 55%;
+	border-radius: 20px 0 0 20px;
+
+} 
+
+.figcaption_popular {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5px;
+    width: 45%; 
+	
+} 
+
+
+
+
+/* ACTIVITES STYLES*/
+
+.flex_container_activity {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    
+} /*takes into account the div*/
+
+.flex_activity_sub_container{
+	display: flex;
+	flex-direction: row;	
+}
+
+.row {
+    display: flex;
+    width: 50%;   
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    height: 400px;
+    align-items: flex-start;	
+}
+
+.figure_1 {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+    align-items: left;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+	
+	flex-direction: column;
+}
+
+.figure_2 {
+    height: 45%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+   
+}
+
+/* padding-left: -75px;
+	margin-left: -5px;
+	height: 350px;*/
+
+.img1 {
+	border-radius: 20px 20px 0 0;
+	height: 350px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.img2 {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+
+.figcaption_activitiy {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 50px;
+    margin: 0px;
+    padding: 5px 5px;
+}
+
+
+
+
+
+/* FOOTER STYLES*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+    padding: 20px 0;
+    margin: 70px 0;
+}
+
+.footer_section {
+    padding: 0 30px;
+    align-items: center;
+    margin: auto;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+/*Pour mobiles*/
+
+.media_navigation {
+	display: none;
+}
+
+.barre_recherche_media {
+	display: none;
+}
+
+
+@media only screen and (min-width: 1100px) {
+	
+    
+    /*NAVIGATION MENU*/
+	.container_navigation_menu {
+		width: 40%;
+	}
+
+
+	/*FILTERS*/
+	
+	.filters {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+
+	.filtering_system {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+	}
+
+	/* FACILITIES AND POPULAR */
+
+	.flex_container_facilities_and_popular {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex_container_facilities:nth-of-type(1) {
+		order: 2;
+		width: 100%;
+		margin: 35px auto;
+	}
+	
+	.flex_container_popular:nth-of-type(2) {
+		order: 1;
+		width: 100%;
+		padding: 0 0 35px;
+		margin: auto;
+		align-content: flex-start;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.media_adjust {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.headline_popular {
+		align-content: baseline;
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	.fa-chart-line {
+		font-size: 30px;
+		margin: 20px;
+	}
+
+	.figure_facilities_popular {
+		width: 30%;
+		height: 100%;
+		max-height: 150px;
+	}
+
+	.imgd {
+		height: 100%;
+		width: 55%;
+		border-radius: 20px 0 0 20px;
+	}
+
+}
+
+@media only screen and (min-width: 400px) {
+	
+	body {
+		width: 100%;
+		border: solid;
+	}
+	
+	
+	/* NAVIGATION MENU*/
+
+	.standard_navigation {
+		display: none;
+	}
+
+	.media_navigation {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo_and_signin_menu {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding-bottom: 0px;
+		width: 100%;	
+	}
+
+	#signin {
+		padding-bottom: 15px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	#signin:visited {
+		padding-bottom: 15px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+    .reservia_logo {
+		
+	}
+
+    .facilities_and_activities_menu {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		
+	}
+
+	.facilities_and_activities {
+		text-align: center;
+		width: 50%;
+		padding-bottom: 10px;
+		text-decoration: none;
+		margin-top: 25px;
+		
+	}
+
+
+
+	.facilities_and_activities:hover {
+		text-align: center;
+		width: 50%;
+		padding-bottom: 10px;
+		border-bottom: solid #0065FC;
+		font-weight: bold;
+		
+	}
+
+	.facilities_and_activities:visited {
+		text-decoration: none;
+		color: #0065FC;
+	}
+
+
+
+
+}
