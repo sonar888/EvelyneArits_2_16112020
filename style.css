@@ -8,6 +8,7 @@ body {
 	margin: 0px 50px;
 }
 
+
 /*******************/
 /*HEADER STYLES*/
 header {
@@ -18,7 +19,7 @@ header {
 
 
 /*NAVIGATION MENU*/
-nav {
+.standard_navigation {
 	display: flex;
 	justify-content: space-between;
 	padding: auto 15px;
@@ -283,7 +284,7 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /* position: relative; */
+    position: relative;
     /* border: solid green; */
     height: 45%;
     width: 100%;
@@ -356,6 +357,7 @@ button {
     background-color: white;
     margin: auto;
     box-shadow: 2px 2px 20px grey;
+    margin: 20px auto;
 }
 
 
@@ -368,8 +370,10 @@ button {
 
 .imgd {
 	
-	height: 140px;
-	width: 140px;
+	height: 100%;
+    max-height: 155px;
+    margin: auto;
+	width: 55%;
 	border-radius: 20px 0 0 20px;
 
 } 
@@ -377,7 +381,8 @@ button {
 .figcaption_popular {
 	display: flex;
 	flex-direction: column;
-	margin-left: 15px; 
+	margin-left: 5px;
+    width: 45%; 
 	
 } 
 
@@ -472,13 +477,19 @@ button {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: black;
     width: 100%;
     background-color: #F2F2F2;
     border-color: #F2F2F2;
     padding: 20px 0;
     margin: 70px 0;
+}
+
+.footer_section {
+    padding: 0 30px;
+    align-items: center;
+    margin: auto;
 }
 
 h2 {
@@ -489,7 +500,7 @@ h2 {
 
 /*Pour mobiles*/
 
-.header_media {
+.media_navigation {
 	display: none;
 }
 
@@ -498,3 +509,161 @@ h2 {
 }
 
 
+@media only screen and (min-width: 1100px) {
+	
+    
+    /*NAVIGATION MENU*/
+	.container_navigation_menu {
+		width: 40%;
+	}
+
+
+	/*FILTERS*/
+	
+	.filters {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+
+	.filtering_system {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+	}
+
+	/* FACILITIES AND POPULAR */
+
+	.flex_container_facilities_and_popular {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.flex_container_facilities:nth-of-type(1) {
+		order: 2;
+		width: 100%;
+		margin: 35px auto;
+	}
+	
+	.flex_container_popular:nth-of-type(2) {
+		order: 1;
+		width: 100%;
+		padding: 0 0 35px;
+		margin: auto;
+		align-content: flex-start;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.media_adjust {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.headline_popular {
+		align-content: baseline;
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		align-items: baseline;
+	}
+	.fa-chart-line {
+		font-size: 30px;
+		margin: 20px;
+	}
+
+	.figure_facilities_popular {
+		width: 30%;
+		height: 100%;
+		max-height: 150px;
+	}
+
+	.imgd {
+		height: 100%;
+		width: 55%;
+		border-radius: 20px 0 0 20px;
+	}
+
+}
+
+@media only screen and (min-width: 400px) {
+	
+	body {
+		width: 100%;
+		border: solid;
+	}
+	
+	
+	/* NAVIGATION MENU*/
+
+	.standard_navigation {
+		display: none;
+	}
+
+	.media_navigation {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo_and_signin_menu {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding-bottom: 0px;
+		width: 100%;	
+	}
+
+	#signin {
+		padding-bottom: 15px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	#signin:visited {
+		padding-bottom: 15px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+    .reservia_logo {
+		
+	}
+
+    .facilities_and_activities_menu {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		
+	}
+
+	.facilities_and_activities {
+		text-align: center;
+		width: 50%;
+		padding-bottom: 10px;
+		text-decoration: none;
+		margin-top: 25px;
+		
+	}
+
+
+
+	.facilities_and_activities:hover {
+		text-align: center;
+		width: 50%;
+		padding-bottom: 10px;
+		border-bottom: solid #0065FC;
+		font-weight: bold;
+		
+	}
+
+	.facilities_and_activities:visited {
+		text-decoration: none;
+		color: #0065FC;
+	}
+
+
+
+
+}

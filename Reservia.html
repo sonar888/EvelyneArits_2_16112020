@@ -10,26 +10,26 @@
 	<body>	
 		<header>
 			<nav>
-				<img class="reservia_logo" src="Reservia@3x.png" alt="logo reservia"/>
-				<p class="container_navigation_menu">
-					<a class="navigation_elements" href="#facilities">Hébergements</a>
-					<a class="navigation_elements" href="#activity">Activités</a>
-					<a class="navigation_elements" href="#signin" id="signin">S'inscrire</a>
-				</p>	
-			</nav>
-
-			<div class="header_media">
-
-				<div class="nav_media">
+				<section class="standard_navigation">
 					<img class="reservia_logo" src="Reservia@3x.png" alt="logo reservia"/>
-					<a href="#signin" id="signin">S'inscrire</a>
-				</div>
-				<div class="hebact_media">
-					<a class="ha" href="#facilities">Hébergements</a>
-					<a class="ha" href="#activity">Activités</a>
-						
-				</div>	
-			</div>
+					<p class="container_navigation_menu">
+						<a class="navigation_elements" href="#facilities">Hébergements</a>
+						<a class="navigation_elements" href="#activity">Activités</a>
+						<a class="navigation_elements" href="#signin" id="signin">S'inscrire</a>
+					</p>	
+				</section>
+
+				<section class="media_navigation">
+					<div class="logo_and_signin_menu">
+						<img class="reservia_logo" src="Reservia@3x.png" alt="logo reservia"/>
+						<a href="#signin" id="signin">S'inscrire</a>
+					</div>
+					<div class="facilities_and_activities_menu">
+						<a class="facilities_and_activities" href="#facilities">Hébergements</a>
+						<a class="facilities_and_activities" href="#activity">Activités</a>		
+					</div>	
+				</section>
+			</nav>
 		</header>
 
 		<main>
@@ -228,23 +228,23 @@
 						<i class="fas fa-chart-line"></i>
 					</div>
 					
-					<figure class="figure_facilities_popular">
-						<div class="flexright">
-							<img src="images/hebergements/4_small/le_soleil_du_matin.jpg" alt="image de l'hôtel, chambre lit 2 personnes, couleure verte" title="Hôtel Le soleil du matin" class="imgd">
-							<figcaption class="figcaption_popular">
-								<p class="texte">Hôtel Le soleil du matin</p>
-								<p>Nuit à partir de <strong> 128€ </strong></p>
-								<div class="star_rating">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-								</div>
-							</figcaption>
-						</div>
-							
-					</figure>
+					<div class="media_adjust">
+						<figure class="figure_facilities_popular">
+							<div class="flexright">
+								<img src="images/hebergements/4_small/le_soleil_du_matin.jpg" alt="image de l'hôtel, chambre lit 2 personnes, couleure verte" title="Hôtel Le soleil du matin" class="imgd">
+								<figcaption class="figcaption_popular">
+									<p class="texte">Hôtel Le soleil du matin</p>
+									<p>Nuit à partir de <strong> 128€ </strong></p>
+									<div class="star_rating">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</figcaption>
+							</div>
+						</figure>
 
 						<figure class="figure_facilities_popular">
 							<div class="flexright">
@@ -280,7 +280,8 @@
 								</figcaption>
 							</div>
 						</figure>
-					</article>
+					</div>
+				</article>
 			</section>
 
 		
@@ -338,20 +339,20 @@
 		</main>	
 		
 		<footer>
-			<section>
+			<section class="footer_section">
 				<h2>A propos</h2>
 				<p>Fonctionnement du site</p>
 				<p>Conditions générales de vente</p>
 				<p>Données et confidentialité</p>
 			</section>
 
-			<section>
+			<section class="footer_section">
 				<h2>Nos hébergements</h2>
 				<p>Charte de qualité</p>
 				<p>Soumettre votre hôtel</p>
 			</section>
 
-			<section>
+			<section class="footer_section">
 				<h2>Assistance</h2>
 				<p>Centre d'aide</p>
 				<p>Nous contacter</p>
