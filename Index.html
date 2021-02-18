@@ -2,6 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1, width=device-width,minimum-scale=1, maximum-scale=1" />
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/7c9183587f.js" crossorigin="anonymous"></script>		
@@ -21,8 +22,8 @@
 
 				<section class="media_navigation">
 					<div class="logo_and_signin_menu">
-						<img class="reservia_logo" src="Reservia@3x.png" alt="logo reservia"/>
-						<a href="#signin" id="signin">S'inscrire</a>
+						<img class="logo_and_signin" id="logo_reservia" src="Reservia@3x.png" alt="logo reservia"/>
+						<a class="logo_and_signin" href="#signin" id="signin">S'inscrire</a>
 					</div>
 					<div class="facilities_and_activities_menu">
 						<a class="facilities_and_activities" href="#facilities">Hébergements</a>
@@ -51,17 +52,15 @@
 				</label>
 					
 
-				<div class="barre_recherche_media">
-					<label for="site-search">
-						<div class="logo_map">
-							<i class="fa fa-map-marker"></i>
-						</div>
-						<input type="search" id="site-search" placeholder="Marseille, France"/> 
-						<button>
-							<i class="fas fa-search"></i>
-						</button>
-					</label>
-				</div>
+				
+				<label class="media_search_bar" for="site-search">
+					<i class="fa fa-map-marker"></i>
+					<input type="search" id="site-search" placeholder="Marseille, France"/> 
+					<button>
+						<i class="fas fa-search"></i>
+					</button>
+				</label>
+				
 			</section>
 
 			<section class="filters">

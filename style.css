@@ -280,32 +280,28 @@ button {
 }
 
 .figcaption_facilities {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /*flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
+    align-items: flex-start;*/
     /* border: solid green; */
-    height: 45%;
+    /*height: 45%;*/
     width: 100%;
-    position: relative;
-    bottom: 25px;
+	padding: 10px 5px 15px;
 }
+
 
 .texte {
 	font-weight: bold;
-	padding: 0;
-	position: relative;
-	bottom: -20px;
 }
 
 .star_rating {
-    display: flex;
-    flex-direction: row;
-    top: -10px;
-    color: #0065FC;
-    position: relative;
+	/* flex-direction: row; */
+	/* top: -10px; */
+	color: #0065FC;
+	/* position: relative; */
 }
+
 .exception {
  	color: #F2F2F2 !important;
 }
@@ -401,7 +397,8 @@ button {
 
 .flex_activity_sub_container{
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
+    height: 400px;	
 }
 
 .row {
@@ -414,7 +411,7 @@ button {
     flex-direction: column;
     width: 50%;
     justify-content: space-between;
-    height: 400px;
+    
     align-items: flex-start;	
 }
 
@@ -504,12 +501,12 @@ h2 {
 	display: none;
 }
 
-.barre_recherche_media {
+.media_search_bar {
 	display: none;
 }
 
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 992px) { /*FOR TABLET SIZE 992 to 600px*/
 	
     
     /*NAVIGATION MENU*/
@@ -587,13 +584,7 @@ h2 {
 
 }
 
-@media only screen and (min-width: 400px) {
-	
-	body {
-		width: 100%;
-		border: solid;
-	}
-	
+@media only screen and (max-width: 600px) { /*FOR PHONE 600px AND LOWER*/
 	
 	/* NAVIGATION MENU*/
 
@@ -611,8 +602,21 @@ h2 {
 		align-items: flex-end;
 		justify-content: space-between;
 		padding-bottom: 0px;
-		width: 100%;	
+		width: 100%;
+        margin: auto;	
 	}
+
+    .logo_and_signin {
+		text-align: center;
+		width: 50%;
+		padding-bottom: 10px;
+		text-decoration: none;
+		margin-top: 25px;
+	}
+
+    #logo_reservia {
+        width: 15%;
+    }
 
 	#signin {
 		padding-bottom: 15px;
@@ -626,9 +630,7 @@ h2 {
 		text-decoration: none;
 	}
 
-    .reservia_logo {
-		
-	}
+    
 
     .facilities_and_activities_menu {
 		display: flex;
@@ -663,7 +665,265 @@ h2 {
 		color: #0065FC;
 	}
 
+    main {
+        width: 80%;
+        margin: auto;
+    }
 
+    .recherche {
+		display: flex;
+		align-items: center;
+	}
+
+	.headline {
+		text-align: center;
+		font-weight: bold;
+		width: 90%;
+		font-size: 1.5em;
+		text-align: center;
+		
+	}
+
+    .search_bar {
+        display: none;
+    }
+
+
+	.media_search_bar {
+		display: flex;
+        justify-content: center;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+	button {
+		font-size: 1em;
+		color: white;
+		font-weight: bold;
+		background-color: #0065FC;
+		border-color: #0065FC;
+		border-radius: 10px 10px 10px 10px;
+	  	border-style: solid;
+	  	padding: 10px;
+	}
+
+	input {
+		border-color: #F2F2F2 #0065FC #F2F2F2 none;
+		border-style: solid;
+		border-width: 3px;
+		font-weight: bold;
+		color: black;
+		padding-top: 10px;
+	  	padding-bottom: 10px;
+	  	margin-right: -10px;
+	  	margin-left: -10px;
+	}
+
+	input:active {
+		border-color: #F2F2F2 #0065FC #F2F2F2 white;
+		border-style: solid;
+		border-width: 3px;
+		font-weight: bold;
+		color: black;
+		padding-top: 10px;
+	  	padding-bottom: 10px;
+	  	margin-right: -10px;
+	  	margin-left: -10px;
+	}
+
+    .filters {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		margin: auto;
+		font-weight: bold;
+		width: 90%;
+		align-content: center;
+		
+	}
+
+
+	.filtering_system {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 90%;
+		justify-content: space-between;
+
+	 }
+    
+    /*POPULAR*/
+
+     .flex_container_facilities_and_popular {
+		display: flex;
+		flex-direction: column;
+        width: 100%;
+	}
+
+	.flex_container_facilities:nth-of-type(1) {
+		order: 2;
+		width: 100%;
+		margin: 35px auto;
+	}
+
+    .flex_container_popular:nth-of-type(2) {
+        order: 1;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    .flexright { /*Is this necessary?*/
+        display: flex;
+        flex-direction: row;
+        border-width: 12px;
+        align-items: flex-start;
+    }
+
+    .imgd {
+        height: 100%;
+        margin: 0;
+        width: 45%;
+        border-radius: 20px 0 0 20px;
+        object-fit: cover;
+    }
+
+    .figcaption_popular {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        width: 55%;
+    }
+
+    /*FACILITIES*/
+
+    .flex_container_facilities {
+        background: none;
+    }
+
+
+    .flex_double_row_facilities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 50%;
+    
+    }
+
+    .figure_facilities {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        /* height: 200px; */
+        border: solid white 5px;
+        border-radius: 20px;
+        background-color: white;
+        margin: 20px 20px;
+        box-shadow: 2px 2px 20px grey;
+        align-items: center;
+    }
+
+    .img {
+        height: 55%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+    }
+
+    .figcaption_facilities {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        /* align-items: flex-start; */
+        /* position: relative; */
+        border: solid green;
+        height: 45%;
+        width: 100%;
+        position: relative;
+        bottom: 25px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    /*ACTIVITIES*/
+
+    .flex_activity_sub_container {
+        flex-direction: column;
+        display: flex;
+        border: solid rebeccapurple;
+        height: fit-content;
+    }
+
+    .row {
+        flex-direction: column;
+        border: orange solid;
+        width: 100%;
+        
+    }
+
+    .column {
+        border: solid red;
+        width: 100%;
+        
+        align-items: center;
+        
+        
+    }
+
+    .figure_1 .figure_2 {
+        width: 85%;
+        border: blue solid;
+        margin: auto;
+    }
+
+    .img1  {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 45%;
+        object-fit: cover;
+    }
+    
+    .img2 {
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 45%;
+        object-fit: cover; 
+    }
+
+    .figcaption_activitiy {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        height: 50%;
+        margin: 0px;
+        padding: 5px 5px;
+    }
+
+    /* FOOTER */
+
+    footer {
+		display: flex;
+		flex-direction: column;
+		font-size: 1em;
+		width: 100%;
+		margin-left: auto;
+
+	}
+
+    .footer_section {
+        width: 85%;
+        align-items: center;
+        margin: 0;
+
+	}
 
 
 }
