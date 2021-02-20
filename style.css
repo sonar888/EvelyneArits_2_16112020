@@ -12,6 +12,29 @@ p {
 	font-size: 1em;
 }
 
+.page_link {
+	text-decoration: none;
+	color: black;
+	
+}
+
+.page_link:hover {
+	font-size: 1.1em;
+}
+
+.page_link:visited {
+	color: lightslategrey;
+	text-decoration: none;
+}
+
+figure {
+	transition: 0.5s;
+}
+
+figure:hover {
+	transform: scale(1.1);
+}
+
 
 /*******************/
 /*HEADER STYLES*/
@@ -60,11 +83,14 @@ header {
 }
 
 .reservia_logo {
-	
 	height: 75px;
 	width: 150px;
 	margin-top: 30px;
+	transition: 0.5s;
+}
 
+.reservia_logo:hover  {
+	transform: scale(1.5);
 }
 
 /*TITRE ET RECHERCHE*/
@@ -190,6 +216,12 @@ button {
 
 
 
+.logo:hover {
+	border: solid #0065FC;
+}
+
+
+
 /*INFO */
 
 
@@ -264,7 +296,6 @@ button {
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
     align-items: center;
-    margin: auto;
     height: 250px;
     /* border: solid; */
 }
@@ -431,7 +462,15 @@ strong {
     width: 50%;   
 }
 
-.column1 .column2{
+.column1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-start;	
+}
+
+.column2 {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -484,9 +523,12 @@ strong {
     display: flex;
     /* align-items: center; */
     font-weight: bold;
-    height: 15%;
-    margin: 0px;
+    /* height: 50px; */
     padding: 5px 5px;
+    margin: auto 0;
+    block-size: 50px;
+    min-block-size: 50px;
+    align-items: center;
 }
 
 
@@ -1021,13 +1063,14 @@ h2 {
 
 
     .figcaption_activitiy {
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        height: 20%;
-        margin: 0px;
-        padding: 5px 5px;
-    }
+		margin: auto 0;
+		padding: 5px 10px;
+		display: flex;
+		padding: 5px 10px;
+		margin: auto 0;
+		align-items: center;
+		min-block-size: 0;
+	}
 
     /* FOOTER */
 
