@@ -41,7 +41,7 @@ figure:hover {
 	display: none;
 }
 
-.media_search_bar {
+.fa-search {
 	display: none;
 }
 
@@ -172,13 +172,14 @@ button {
 .filters {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	width: 67%;
+	justify-content: space-between;
+	width: 70%;
 }
 
 #to_align {
 	padding: 12.5px;
-	font-weight: bold;	
+	font-weight: bold;
+	margin-right: 40px;	
 }
 
 .filtering_system {
