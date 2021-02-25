@@ -117,11 +117,12 @@ p {
 /*Search bar*/
 
 .search_bar {
-	display: flex; /* cette ligne fait en sorte que les boites ont la même épaisseur */
+	display: flex; 
   	align-items: center;
   	padding-top: 10px;
   	padding-bottom: 10px;
   	height: 50px;
+	margin: 15px 0;
 }
 
 .fa-map-marker {
@@ -323,6 +324,7 @@ button {
 
 .text {
     font-size: 0.8em;
+	margin: 5px 0;
 }
 
 strong {
@@ -335,6 +337,7 @@ strong {
 	flex-wrap: wrap;
 	flex-direction: row;
 	color: #0065FC;
+	margin: 5px 0;
 }
 
 .exception {
