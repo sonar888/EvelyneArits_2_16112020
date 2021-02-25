@@ -121,17 +121,19 @@ p {
   	align-items: center;
   	padding-top: 10px;
   	padding-bottom: 10px;
-  	
+  	height: 50px;
 }
 
 .fa-map-marker {
-	text-align: center;
+	display: flex;
+	font-size: 1.5em;
+	font-weight: bold;
 	background-color: #F2F2F2;
-	border: solid #F2F2F2;
-	border-radius: 10px 0px 0px 10px;
-	width: 40px;
-	height: 100%;
-	padding: 10px 0;
+	border-color: #F2F2F2;
+	border-radius: 10px 10px 10px 10px;
+	border-style: solid;
+	padding: 10px;
+	color: black;
 	
 }
 
@@ -141,8 +143,8 @@ input {
 	border-width: 3px;
 	font-weight: bold;
 	color: black;
-	padding-top: 10px;
-  	padding-bottom: 10px;
+	padding-top: 10px 0;
+	height: 100%;
 }
 
 input:active {
@@ -150,8 +152,8 @@ input:active {
 	border-style: solid;
 	font-weight: bold;
 	color: black;
-	padding-top: 10px;
-  	padding-bottom: 10px;
+	padding-top: 10px 0;
+	height: 100%;
 }
 
 button {
@@ -162,8 +164,8 @@ button {
 	border-color: #0065FC;
 	border-radius: 0px 10px 10px 0px;
   	border-style: solid;
-  	padding-top: 10px;
-  	padding-bottom: 10px;
+	padding-top: 10px 0;
+  	height: 100%;
 }
 
 
@@ -267,7 +269,7 @@ button {
 .flex_container_facilities {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
@@ -291,8 +293,8 @@ button {
 .figure_facilities {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 65%;
+    width: 27%;
+    height: 150px;
     border: solid white 5px;
     border-radius: 20px;
     background-color: white;
@@ -362,7 +364,7 @@ strong {
     flex-direction: column;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 33%;
+    width: 27%;
 }
 
 .headline_popular {
@@ -697,6 +699,8 @@ h2 {
 		display: none;
 	}
 
+	
+
 	.media_navigation {
 		display: flex;
 		flex-direction: column;
@@ -750,11 +754,13 @@ h2 {
 
 	.facilities_and_activities {
 		text-align: center;
-		width: 50%;
-		padding-bottom: 10px;
+		width: 49%;
+		margin: auto;
+		padding-bottom: 15px;
 		text-decoration: none;
 		margin-top: 25px;
-		color: #0065FC;
+		color: black;
+		border-bottom: solid #F2F2F2;
 		
 	}
 
@@ -762,10 +768,12 @@ h2 {
 
 	.facilities_and_activities:hover {
 		text-align: center;
-		width: 50%;
-		padding-bottom: 10px;
+		width: 49%;
+		margin: auto;
+		padding-bottom: 15px;
 		border-bottom: solid #0065FC;
 		font-weight: bold;
+		color: #0065FC;
 		
 	}
 
@@ -774,15 +782,19 @@ h2 {
 		color: #0065FC;
 	}
 
+
+	/*MAIN*/
+
     main {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 
-    .recherche {
-		display: flex;
-		align-items: center;
+	.media_headline {
+		width: 85%;
+		margin: auto;
 	}
+
 
 	.headline {
 		text-align: center;
@@ -792,23 +804,25 @@ h2 {
 	}
 
     .search_bar {
-        display: none;
+        display: flex;
+		padding: 10px 0;
+		width: 80%;
+		margin: auto;
     }
 
-
-	.media_search_bar {
-		display: flex;
-		/* justify-content: center; */
-		/* align-content: flex-start; */
-		padding: 10px 0;
-		/* padding-bottom: 11px; */
-		width: 90%;
-		margin: auto;
+	span {
+		display: none;
 	}
 
-	button {
-		font-size: 1em;
+	.fa-search {
 		color: white;
+		display: flex;
+	}
+
+
+	button {
+		display: flex;
+		font-size: 1.5em;
 		font-weight: bold;
 		background-color: #0065FC;
 		border-color: #0065FC;
@@ -922,6 +936,11 @@ h2 {
         width: 55%;
     }
 
+	.text {
+		font-size: 1em;
+		margin: auto 0;
+	}
+
     /*FACILITIES*/
 
     .flex_container_facilities {
@@ -942,7 +961,7 @@ h2 {
         display: flex;
         flex-direction: column;
         width: 95%;
-        height: 150px;
+        height: 200px;
         border: solid white 5px;
         border-radius: 20px;
         background-color: white;
@@ -952,7 +971,7 @@ h2 {
     }
 
     .img {
-        height: 55%;
+        height: 60%;
         width: 100%;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
@@ -1007,7 +1026,7 @@ h2 {
 
     .figure_1 {
 		width: 100%;
-		height: 150px;
+		height: 200px;
 		margin: 20px auto;
 		white-space: nowrap;
 		font-size: 0.8em;
@@ -1015,7 +1034,7 @@ h2 {
 
 	.figure_2 {
 		width: 100%;
-		height: 150px;
+		height: 200px;
 		margin: 20px auto;
 		white-space: nowrap;
 		font-size: 0.8em;
@@ -1044,6 +1063,7 @@ h2 {
 		margin: auto 0;
 		align-items: center;
 		min-height: 0;
+		font-size: 1.2em;
 	}
 
     /* FOOTER */
@@ -1052,8 +1072,8 @@ h2 {
 		display: flex;
 		flex-direction: column;
 		font-size: 1em;
-		width: 85%;
-		margin: 20px auto;
+		width: 100%;
+		margin: 20px 0;
 
 	}
 
