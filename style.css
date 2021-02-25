@@ -41,7 +41,7 @@ figure:hover {
 	display: none;
 }
 
-.fa-search {
+.media {
 	display: none;
 }
 
@@ -813,11 +813,11 @@ h2 {
 		margin: auto;
     }
 
-	span {
+	.standard {
 		display: none;
 	}
 
-	.fa-search {
+	.media {
 		color: white;
 		display: flex;
 	}
